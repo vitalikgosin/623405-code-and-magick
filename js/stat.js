@@ -49,3 +49,4 @@ window.renderStatistics = function (ctx, names, times) {
     ctx.fillRect(CLOUD_X + COLOUMN_WIDTH + (GAP + BAR_WIDTH * 3) * i, CLOUD_Y + GAP + 200, BAR_WIDTH, ((barheight * times[i]) / maxTime) * -1);
   }
 };
+console.log('test');
