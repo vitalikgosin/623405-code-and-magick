@@ -36,7 +36,7 @@ window.renderStatistics = function (ctx, names, times) {
   var maxTime = getMaxElement(times);
   for (var i = 0; i < names.length; i++) {
 
-    var cr = 'rgba(2,14,133,' + Math.random() + ')';
+    var customColor = 'rgba(2,14,133,' + Math.random() + ')';
 
     ctx.fillStyle = '#000';
     ctx.font = '14px arial';
@@ -44,7 +44,7 @@ window.renderStatistics = function (ctx, names, times) {
     if (names[i] === 'Вы') {
       ctx.fillStyle = 'rgba(255, 0, 0, 1)';
     } else {
-      ctx.fillStyle = cr;
+      ctx.fillStyle = customColor;
     }
     ctx.fillRect(CLOUD_X + COLOUMN_WIDTH + (GAP + BAR_WIDTH * 3) * i, CLOUD_Y + GAP + 200, BAR_WIDTH, ((barheight * times[i]) / maxTime) * -1);
   }
