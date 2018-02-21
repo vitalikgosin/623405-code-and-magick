@@ -1,7 +1,7 @@
 'use strict';
 (function () {
 
-  // -------------------------------------------------- upload
+  // -------------------------------------------------- onsave
   function onSave() {
     var URL = 'https://js.dump.academy/code-and-magick';
 

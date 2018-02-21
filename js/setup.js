@@ -35,7 +35,7 @@
 
   var form = userDialog.querySelector('.setup-wizard-form');
   form.addEventListener('submit', function (evt) {
-    window.save(new FormData(form), function (response) {
+    window.save(new FormData(form), function () {
       userDialog.classList.add('hidden');
     });
     evt.preventDefault();
